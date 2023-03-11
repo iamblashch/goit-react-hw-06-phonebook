@@ -23,9 +23,6 @@ const ContactPage = () => {
     dispatch(addContact(data));
   };
 
-  //Функция ниже возвращает либо contacts либо отфильтрованый массив с контактами.
-  //Дальше она передается в компонент ContactList который создает разметку искользуя эти данные
-
   const filterSearch = () => {
     if (!filter) {
       return contacts;
